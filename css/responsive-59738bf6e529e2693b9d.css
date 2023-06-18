@@ -1,0 +1,290 @@
+@media screen and (max-width: 992px) {
+    section {
+        padding: 50px;
+    }
+
+    [class*="__heading"] {
+        font-size: 40px;
+    }
+
+    /** ========== Header Section ==========  */
+    header .row .col:nth-child(2) {
+        display: none;
+    }
+
+    header .row {
+        justify-content: space-between;
+    }
+
+    header .row .col:last-child {
+        display: block;
+    }
+
+    .nav__menu {
+        position: fixed;
+        left: 100%;
+        top: 79px;
+        width: 100%;
+        background-color: var(--secondary);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        transition: all .4s ease-in-out;
+    }
+
+    .nav__item {
+        margin-bottom: 25px;
+    }
+
+    .nav__menu.active {
+        left: 0%;
+    }
+
+    .hamburger {
+        cursor: pointer;
+    }
+
+    .hamburger .bar {
+        width: 25px;
+        height: 4px;
+        background-color: var(--primary);
+        margin-bottom: 5px;
+        border-radius: 5px;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg)
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg)
+    }
+
+
+    /** ========== Hero Section ==========  */
+    .hero .row .col {
+        width: 100%;
+    }
+
+    .hero__heading {
+        font-size: 50px;
+    }
+
+    .hero .row .col:nth-child(2) {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    /** ========== Home Section ==========  */
+    .home .row {
+        justify-content: center;
+    }
+
+    .home .row .col {
+        width: 100%;
+    }
+
+    /** ========== About Section ==========  */
+    .about .row .col {
+        width: 100%;
+    }
+
+    .about .row .col:nth-child(1) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .about .row .col:nth-child(1) .about__texts {
+        width: 46%;
+    }
+
+    /** ========== Banner Section ==========  */
+    .banner .brands {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banner .brands .brand {
+        width: 30%;
+    }
+
+    /** ========== Features Section ==========  */
+    .features .row .col {
+        width: 100%;
+    }
+
+    .features .row .col:nth-child(2) {
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    /** ========== How it works Section ==========  */
+    .howit .row .col {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .howit__box {
+        width: 46%;
+    }
+
+    /** ========== Services Section ==========  */
+    .services .row .col {
+        width: 46%;
+    }
+
+    /** ========== Contact Section ==========  */
+    .contact .row .col:nth-child(1) {
+        width: 100%;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact .row .col:nth-child(2) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact__form {
+        width: 70%;
+    }
+
+    /** ========== Footer Section ==========  */
+    .first-row .col:first-child,
+    .first-row .col:nth-child(2) {
+        width: 100%;
+    }
+
+    .first-row .col:first-child {
+        margin-bottom: 50px;
+    }
+
+    .second-row .col:first-child,
+    .second-row .col:nth-child(2) {
+        width: 100%;
+    }
+
+    .second-row .col:nth-child(2) {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    section {
+        padding: 50px 25px;
+    }
+
+    [class*="__heading"] {
+        font-size: 30px;
+        line-height: 1.4;
+    }
+
+    [class*="__description"],
+    .about__text {
+        width: 100%;
+        line-height: 2;
+    }
+
+    /** ========== Header Section ==========  */
+    header {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    /** ========== Hero Section ==========  */
+    .hero .row .col:nth-child(2) {
+        display: none;
+    }
+
+    .hero__brands {
+        flex-direction: column;
+    }
+
+    .hero__brand {
+        margin-bottom: 25px;
+    }
+
+    /** ========== Home Section ==========  */
+    .home .row .col {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .home .row .col .icon {
+        margin-bottom: 20px;
+    }
+
+    /** ========== About Section ==========  */
+    .about .row .col:nth-child(1) .about__texts {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    /** ========== Banner Section ==========  */
+    .banner .banner__description span {
+        display: inline;
+    }
+
+    .banner .brands .brand {
+        width: 100%;
+    }
+
+    /** ========== Features Section ==========  */
+    .features .row .col:nth-child(1) .feature__box {
+        width: 100%;
+    }
+
+    /** ========== Howit Section ==========  */
+    .howit__box {
+        width: 100%;
+    }
+
+    /** ========== Services Section ==========  */
+    .services .row .col {
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
+    /** ========== Contact Section ==========  */
+    .contact__form {
+        width: 100%;
+    }
+
+    .contact__boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact__box:first-child {
+        margin-right: 0px;
+    }
+
+    .contact__box {
+        margin-bottom: 20px;
+        width: 200px;
+    }
+
+    /** ========== Footer Section ==========  */
+    .footer__menu {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer__item {
+        margin-bottom: 45px;
+    }
+
+    .second-row .col:nth-child(2) {
+        justify-content: start;
+    }
+}

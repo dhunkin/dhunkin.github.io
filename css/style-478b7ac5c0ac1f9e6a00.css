@@ -1,0 +1,438 @@
+body {
+    font-family: 'Inter', sans-serif;
+    position: relative;
+}
+
+
+::selection {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--hover--primary);
+}
+
+/** ========== Header Section ========== */
+header {
+    padding: 20px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
+}
+
+.nav__logo {
+    margin-right: 50px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.nav__logo h1 {
+    font-size: 22px;
+}
+
+.nav__link {
+    display: inline-block;
+    font-size: 18px;
+    position: relative;
+    margin-right: 25px;
+}
+
+.nav__link::after {
+    content: ' ';
+    width: 0%;
+    height: 3px;
+    background-color: var(--primary);
+    display: inline-block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    border-radius: 10px;
+    transition: all .4s ease-in-out;
+}
+
+.nav__link:hover::after {
+    width: 100%;
+}
+
+header .row .col:last-child {
+    display: none;
+}
+
+/** ========== Hero Section ========== */
+.hero .row .col {
+    width: 50%;
+}
+
+.hero__heading {
+    font-size: 65px;
+    letter-spacing: -1px;
+}
+
+.hero__description {
+    margin: 30px 0 40px;
+    width: 470px;
+}
+
+.hero__button {
+    margin-bottom: 70px;
+}
+
+.hero__button p {
+    width: 250px;
+}
+
+
+/** ========== Home Section ========== */
+.home__heading {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.home .row .col {
+    width: 46%;
+    margin-bottom: 40px;
+}
+
+.home .icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 24px;
+    border-radius: 100%;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.home .icon:hover {
+    transform: rotate(45deg);
+}
+
+.home__title {
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.home__title:hover {
+    color: var(--primary);
+}
+
+
+/** ========== About Section ========== */
+.about .row .col {
+    width: 43%;
+}
+
+.about__texts {
+    margin-bottom: 70px;
+}
+
+.about__icon {
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    padding: 24px;
+    border-radius: 100%;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.about__icon:hover i {
+    color: var(--hover--primary);
+}
+
+.about__title {
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.about__title:hover {
+    color: var(--primary);
+}
+
+.about__text {
+    margin-bottom: 30px;
+    width: 450px;
+}
+
+
+/** ========== Banner Section ========== */
+.banner .col {
+    flex-direction: column;
+}
+
+.banner__title span,
+.banner__description span {
+    display: block;
+}
+
+.banner__description {
+    margin: 30px 0 40px;
+}
+
+.banner .btn {
+    margin-bottom: 50px;
+}
+
+.banner .brands {
+    gap: 3rem;
+    padding-top: 50px;
+    border-top: 2px solid #B4B4B4;
+}
+
+
+/** ========== Features Section ========== */
+.features .row .col {
+    width: 46%;
+}
+
+.features .row .col:nth-child(2) {
+    justify-content: end;
+}
+
+.features .row .col:first-child {
+    flex-wrap: wrap;
+}
+
+.feature__box {
+    width: 49%;
+    padding: 20px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.feature__box:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feature__box i {
+    font-size: 30px;
+    color: var(--primary);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.feature__box i:hover {
+    color: var(--hover--primary);
+}
+
+.feature__title {
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.feature__title:hover {
+    color: var(--primary);
+}
+
+
+
+/** ========== How it works Section ========== */
+.howit__heading {
+    width: 100%;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.howit .col {
+    width: 100%;
+}
+
+.howit__img {
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.howit__img:hover {
+    transform: scale(1.1);
+}
+
+.howit__info {
+    font-size: 25px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.howit__info:hover {
+    color: var(--primary);
+}
+
+
+/** ========== Services Section ========== */
+.service__heading {
+    margin-bottom: 50px;
+}
+
+.service__heading span {
+    display: block;
+}
+
+.services .row .col {
+    width: 30%;
+    padding: 35px;
+    margin-bottom: 25px;
+    background-color: var(--secondary);
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.services .row .col:hover {
+    transform: scale(1.03);
+}
+
+.service__img {
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    margin-bottom: 50px;
+}
+
+.service__img:hover {
+    transform: rotate(45deg);
+}
+
+.service__description {
+    margin-bottom: 40px;
+}
+
+/** ========== Contact Section ========== */
+.contact .row .col {
+    width: 46%;
+}
+
+.contact__description {
+    margin: 30px 0 60px;
+    width: 480px;
+}
+
+.contact__box {
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.contact__box span {
+    display: block;
+}
+
+.contact__box:nth-child(1) {
+    margin-right: 30px;
+    background-color: var(--primary);
+    color: var(--white);
+    transition: all .4s ease-in-out;
+}
+
+.contact__box:nth-child(2) {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background-color: var(--white);
+    transition: all .4s ease-in-out;
+}
+
+.contact__box:nth-child(1):hover,
+.contact__box:nth-child(2):hover {
+    transform: scale(1.05);
+}
+
+.contact__form {
+    padding: 30px;
+    background-color: var(--white);
+    border-radius: 7px;
+}
+
+.form__description {
+    margin: 25px 0 40px;
+}
+
+.contact__form label {
+    display: block;
+}
+
+.contact__form label span {
+    color: var(--primary);
+}
+
+.contact__form input,
+.contact__form textarea {
+    width: 100%;
+    border: 1px solid #B4B4B4;
+}
+
+.contact__form input {
+    padding: 15px;
+}
+
+.contact__form textarea {
+    padding: 20px;
+}
+
+.contact__message {
+    margin-bottom: 35px;
+}
+
+
+/** ========== Footer Section ========== */
+footer {
+    padding: 100px 50px 50px;
+}
+
+.first-row {
+    margin-bottom: 50px;
+}
+
+.first-row .col:first-child {
+    width: 35%;
+}
+
+.first-row .col:last-child {
+    width: 55%;
+}
+
+.company__name {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.company__info span {
+    display: block;
+}
+
+.footer__link {
+    padding: 10px 20px;
+    border: 1px solid #B4B4B4;
+    margin-right: 25px;
+    color: var(--white);
+    transition: all .4s ease-in-out;
+}
+
+.footer__link:hover {
+    background-color: var(--white);
+    color: var(--dark-300);
+}
+
+.second-row {
+    padding-top: 50px;
+    border-top: 1px solid #B4B4B4;
+}
+
+.second-row .col {
+    width: 46%;
+}

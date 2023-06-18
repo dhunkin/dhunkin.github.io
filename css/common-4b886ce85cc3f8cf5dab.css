@@ -1,0 +1,215 @@
+/** ========== Utility Classes for this project ==========  */
+
+:root {
+    --primary: #2E4FD7;
+    --secondary: #E7EBFC;
+    --dark-100: #052825;
+    --dark-200: #1E1E1E;
+    --dark-300: #191919;
+    --white: #fff;
+    --hover--primary: #1A3BC3;
+}
+
+
+/** ========== Backgrounds ==========  */
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.bg-secondary {
+    background-color: var(--secondary);
+}
+
+.bg-dark {
+    background-color: var(--dark-100);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+/** ========== Texts ==========  */
+.text-start {
+    text-align: start;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.text-primary {
+    color: var(--dark-300);
+}
+
+.text-secondary {
+    color: var(--dark-200);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.text-white-200 {
+    color: rgb(219, 214, 214);
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.fw-regular {
+    font-weight: 400;
+}
+
+
+/** ========== Buttons ==========  */
+.btn {
+    display: inline-block;
+    border: 1px solid var(--primary);
+    padding: 15px 25px;
+    font-size: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn--borderless {
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    color: var(--primary);
+    font-size: 18px;
+
+}
+
+.btn--borderless i {
+    display: inline-block;
+    transition: all .4s ease-in-out;
+}
+
+.btn--borderless:hover i {
+    transform: translateX(7px);
+}
+
+.btn--primary {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.btn--primary:hover {
+    background-color: var(--hover--primary);
+}
+
+.btn--secondary {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+.btn--secondary:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+
+/** ========== Layout ==========  */
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/** ========== Spacing ==========  */
+/** ========== Most used margins and paddings ==========  */
+/*! margin 10px  */
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.ms-10 {
+    margin-left: 10px;
+}
+
+/*! margin 20px  */
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.me-20 {
+    margin-right: 20px;
+}
+
+.mx-20 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/** ========== Mutual Styles ==========  */
+section {
+    padding: 100px 50px;
+}
+
+[class*="__title"] {
+    font-size: 25px;
+}
+
+[class*="__heading"] {
+    line-height: 1.1;
+    font-size: 50px;
+}
+
+p {
+    line-height: 1.6;
+}
