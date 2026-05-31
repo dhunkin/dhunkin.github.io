@@ -3,44 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Futuremed Solutions SL - Medical mobile applications and AI-powered healthcare tools. Modality, StopPanic, BloodFlow, and CXR Watcher.">
-  <title>Futuremed Solutions | Medical AI &amp; Mobile Applications</title>
+  <meta name="description" content="Futuremed Solutions SL - Medical AI and mobile health applications.">
+  <title>Futuremed Solutions | Medical AI & Mobile Apps</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <style>
-    .hero-bg {
-      background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
-    }
-    .app-card {
-      transition: all 0.3s ease;
-    }
-    .app-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-    }
+    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%); }
+    .app-card { transition: all 0.3s ease; }
+    .app-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
   </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
+
+  <!-- Language Switcher -->
+  <div class="bg-white border-b py-2">
+    <div class="max-w-7xl mx-auto px-6 flex justify-end gap-4 text-sm">
+      <a href="index.html" class="flex items-center gap-1.5 font-medium text-red-600">
+        <span class="text-lg">🇬🇧</span> EN
+      </a>
+      <a href="es.html" class="flex items-center gap-1.5 hover:text-red-600 transition">
+        <span class="text-lg">🇪🇸</span> ES
+      </a>
+      <a href="fr.html" class="flex items-center gap-1.5 hover:text-red-600 transition">
+        <span class="text-lg">🇫🇷</span> FR
+      </a>
+    </div>
+  </div>
 
   <!-- Navbar -->
   <nav class="bg-white border-b sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       <div class="flex items-center gap-3">
-        <img src="/attachments/future-logo.png" alt="Futuremed Logo" class="h-10">
+        <img src="/attachments/future-logo.png" alt="Futuremed" class="h-10">
         <div>
           <span class="text-2xl font-bold text-red-600">Futuremed</span>
           <span class="text-slate-500 text-sm block -mt-1">Solutions SL</span>
         </div>
       </div>
       <div class="hidden md:flex items-center gap-8">
-        <a href="#applications" class="hover:text-red-600 font-medium">Applications</a>
-        <a href="#projects" class="hover:text-red-600 font-medium">Projects</a>
-        <a href="#about" class="hover:text-red-600 font-medium">About</a>
-        <a href="#contact" class="hover:text-red-600 font-medium">Contact</a>
+        <a href="#applications" class="hover:text-red-600">Applications</a>
+        <a href="#projects" class="hover:text-red-600">Projects</a>
+        <a href="#about" class="hover:text-red-600">About</a>
+        <a href="#contact" class="hover:text-red-600">Contact</a>
       </div>
-      <a href="#contact" class="bg-red-600 text-white px-6 py-2.5 rounded-full hover:bg-red-700 transition">
-        Get in Touch
-      </a>
+      <a href="#contact" class="bg-red-600 text-white px-6 py-2.5 rounded-full hover:bg-red-700">Get in Touch</a>
     </div>
   </nav>
 
@@ -55,7 +61,7 @@
         Developing intelligent medical applications and AI solutions that improve lives worldwide.
       </p>
       <div class="mt-10">
-        <a href="#applications" class="inline-block bg-white text-slate-900 px-8 py-4 rounded-full text-lg font-semibold hover:bg-slate-100 transition">
+        <a href="#applications" class="inline-block bg-white text-slate-900 px-8 py-4 rounded-full text-lg font-semibold hover:bg-slate-100">
           Explore Our Applications
         </a>
       </div>
@@ -67,40 +73,37 @@
     <div class="max-w-7xl mx-auto px-6">
       <h2 class="text-4xl font-bold text-center mb-4">Our Applications</h2>
       <p class="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-        Purpose-built mobile tools designed to empower people with better health awareness and self-management.
+        Purpose-built mobile tools designed to empower people with better health awareness.
       </p>
 
       <div class="grid md:grid-cols-3 gap-8">
-
         <!-- Modality -->
         <div class="app-card bg-white border border-slate-200 rounded-3xl overflow-hidden">
-          <img src="/attachments/modality-splash.png" alt="Modality App" class="w-full h-64 object-cover">
+          <img src="/attachments/modality-splash.png" alt="Modality" class="w-full h-64 object-cover">
           <div class="p-8">
             <div class="flex items-center gap-3 mb-4">
-              <img src="/attachments/modality-logo.png" alt="Modality" class="w-12 h-12">
+              <img src="/attachments/modality-app-icon.png" alt="Modality" class="w-12 h-12">
               <div>
                 <h3 class="text-2xl font-bold">Modality</h3>
                 <span class="text-green-600 font-medium">Free</span>
               </div>
             </div>
-            <p class="text-slate-600">Discover your dominant sensory learning style (Visual, Auditory, Kinesthetic) and optimize how you learn and process information.</p>
-            <div class="mt-6 text-sm text-slate-500">Available on iOS & Android</div>
+            <p class="text-slate-600">Discover your dominant sensory learning style and learn in the way that works best for you.</p>
           </div>
         </div>
 
         <!-- StopPanic -->
         <div class="app-card bg-white border border-slate-200 rounded-3xl overflow-hidden">
-          <div class="h-64 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white">
-            <div class="text-center">
-              <i class="fa-solid fa-heart-pulse text-7xl mb-4"></i>
-              <h3 class="text-2xl font-bold">StopPanic</h3>
-            </div>
-          </div>
+          <img src="/attachments/stoppanic-splash.png" alt="Modality" class="w-full h-64 object-cover">
           <div class="p-8">
-            <h3 class="text-2xl font-bold mb-2">StopPanic</h3>
-            <span class="text-green-600 font-medium">Free + Subscriptions</span>
-            <p class="mt-4 text-slate-600">Your personal companion for managing panic attacks. Track episodes, get instant relief tools, and use predictive insights.</p>
-            <div class="mt-6 text-sm text-slate-500">Available on iOS & Android</div>
+            <div class="flex items-center gap-3 mb-4">
+              <img src="/attachments/stoppanic-app-icon.png" alt="Modality" class="w-12 h-12">
+              <div>
+                <h3 class="text-2xl font-bold">StopPanic</h3>
+                <span class="text-green-600 font-medium">Free + Subscriptions</span>
+              </div>
+            </div>
+            <p class="mt-4 text-slate-600">Your companion for managing panic attacks with tracking, relief tools, and forecasting.</p>
           </div>
         </div>
 
@@ -115,8 +118,7 @@
           <div class="p-8">
             <h3 class="text-2xl font-bold mb-2">BloodFlow</h3>
             <span class="text-green-600 font-medium">Free + Subscriptions</span>
-            <p class="mt-4 text-slate-600">Early detection and prevention of thrombosis. Monitor risk factors and receive personalized health recommendations.</p>
-            <div class="mt-6 text-sm text-slate-500">Available on iOS & Android</div>
+            <p class="mt-4 text-slate-600">Early detection and prevention of thrombosis with smart monitoring.</p>
           </div>
         </div>
       </div>
