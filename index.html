@@ -1,221 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Futuremed Solutions SL - Medical AI and mobile health applications.">
-  <title>Futuremed Solutions | Medical AI & Mobile Apps</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <style>
-    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%); }
-    .app-card { transition: all 0.3s ease; }
-    .app-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===================== SEO ===================== -->
+  <title>FutureMed Solutions — Intelligent Mobile Apps for Healthcare</title>
+  <meta name="description" content="FutureMed Solutions SL builds intelligent mobile health apps for iOS and Android. Discover Modality, StopPanic and BloodFlow — wellbeing tools powered by AI, machine learning and predictive modelling." />
+  <meta name="keywords" content="medical apps, healthcare apps, panic attack tracker, thrombosis prevention, mobile health, AI in healthcare, machine learning medical, iOS health app, Android health app, FutureMed" />
+  <meta name="author" content="FutureMed Solutions SL" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#2e7bb0" />
+  <link rel="canonical" href="https://futuremed.id/" />
+
+  <!-- Language alternates -->
+  <link rel="alternate" hreflang="en" href="https://futuremed.id/" />
+  <link rel="alternate" hreflang="es" href="https://futuremed.id/es/" />
+  <link rel="alternate" hreflang="fr" href="https://futuremed.id/fr/" />
+  <link rel="alternate" hreflang="de" href="https://futuremed.id/de/" />
+  <link rel="alternate" hreflang="x-default" href="https://futuremed.id/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FutureMed Solutions" />
+  <meta property="og:title" content="FutureMed Solutions — Intelligent Mobile Apps for Healthcare" />
+  <meta property="og:description" content="Native iOS & Android health apps powered by AI and machine learning. Meet Modality, StopPanic and BloodFlow." />
+  <meta property="og:url" content="https://futuremed.id/" />
+  <meta property="og:locale" content="en" />
+  <meta property="og:image" content="https://futuremed.id/assets/future-logo.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FutureMed Solutions — Intelligent Mobile Apps for Healthcare" />
+  <meta name="twitter:description" content="Native iOS & Android health apps powered by AI and machine learning." />
+  <meta name="twitter:image" content="https://futuremed.id/assets/future-logo.png" />
+
+  <!-- Icons -->
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <!-- ===================== Structured data ===================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "FutureMed Solutions SL",
+    "url": "https://futuremed.id/",
+    "logo": "https://futuremed.id/assets/future-logo.png",
+    "email": "info@futuremed.id",
+    "description": "Developer of intelligent mobile health applications using native iOS and Android technologies, machine learning and predictive modelling.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Ernesto Sarti, 10, Costa Adeje",
+      "postalCode": "38660",
+      "addressLocality": "Adeje",
+      "addressRegion": "Santa Cruz de Tenerife",
+      "addressCountry": "ES"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      { "@type": "SoftwareApplication", "position": 1, "name": "Modality", "applicationCategory": "HealthApplication", "operatingSystem": "iOS, Android", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } },
+      { "@type": "SoftwareApplication", "position": 2, "name": "StopPanic", "applicationCategory": "HealthApplication", "operatingSystem": "iOS, Android", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } },
+      { "@type": "SoftwareApplication", "position": 3, "name": "BloodFlow", "applicationCategory": "HealthApplication", "operatingSystem": "iOS, Android", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }
+    ]
+  }
+  </script>
 </head>
-<body class="bg-slate-50 text-slate-800">
 
-  <!-- Language Switcher -->
-  <div class="bg-white border-b py-2">
-    <div class="max-w-7xl mx-auto px-6 flex justify-end gap-4 text-sm">
-      <a href="index.html" class="flex items-center gap-1.5 font-medium text-red-600">
-        <span class="text-lg">🇬🇧</span> EN
+<body>
+  <!-- ===================== Header ===================== -->
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="FutureMed Solutions home">
+        <img src="/assets/future-logo.png" alt="FutureMed Solutions logo" width="574" height="148" />
       </a>
-      <a href="es.html" class="flex items-center gap-1.5 hover:text-red-600 transition">
-        <span class="text-lg">🇪🇸</span> ES
-      </a>
-      <a href="fr.html" class="flex items-center gap-1.5 hover:text-red-600 transition">
-        <span class="text-lg">🇫🇷</span> FR
-      </a>
-    </div>
-  </div>
 
-  <!-- Navbar -->
-  <nav class="bg-white border-b sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <div class="flex items-center gap-3">
-        <img src="/attachments/future-logo.png" alt="Futuremed" class="h-10">
-        <div>
-          <span class="text-2xl font-bold text-red-600">Futuremed</span>
-          <span class="text-slate-500 text-sm block -mt-1">Solutions SL</span>
-        </div>
-      </div>
-      <div class="hidden md:flex items-center gap-8">
-        <a href="#applications" class="hover:text-red-600">Applications</a>
-        <a href="#projects" class="hover:text-red-600">Projects</a>
-        <a href="#about" class="hover:text-red-600">About</a>
-        <a href="#contact" class="hover:text-red-600">Contact</a>
-      </div>
-      <a href="#contact" class="bg-red-600 text-white px-6 py-2.5 rounded-full hover:bg-red-700">Get in Touch</a>
-    </div>
-  </nav>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#apps">Applications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contacts">Contacts</a>
+      </nav>
 
-  <!-- Hero -->
-  <section class="hero-bg text-white py-24">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <img src="/attachments/future-logo.png" alt="Futuremed" class="h-20 mx-auto mb-6">
-      <h1 class="text-5xl md:text-6xl font-bold mb-6">
-        Healthcare Innovation<br>Through <span class="text-red-500">Technology</span>
-      </h1>
-      <p class="text-xl text-slate-300 max-w-2xl mx-auto">
-        Developing intelligent medical applications and AI solutions that improve lives worldwide.
-      </p>
-      <div class="mt-10">
-        <a href="#applications" class="inline-block bg-white text-slate-900 px-8 py-4 rounded-full text-lg font-semibold hover:bg-slate-100">
-          Explore Our Applications
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Applications -->
-  <section id="applications" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-4">Our Applications</h2>
-      <p class="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-        Purpose-built mobile tools designed to empower people with better health awareness.
-      </p>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- Modality -->
-        <div class="app-card bg-white border border-slate-200 rounded-3xl overflow-hidden">
-          <img src="/attachments/modality-splash.png" alt="Modality" class="w-full h-64 object-cover">
-          <div class="p-8">
-            <div class="flex items-center gap-3 mb-4">
-              <img src="/attachments/modality-app-icon.png" alt="Modality" class="w-12 h-12">
-              <div>
-                <h3 class="text-2xl font-bold">Modality</h3>
-                <span class="text-green-600 font-medium">Free</span>
-              </div>
-            </div>
-            <p class="text-slate-600">Discover your dominant sensory learning style and learn in the way that works best for you.</p>
+      <div class="nav-actions">
+        <!-- Language switcher -->
+        <div class="lang" id="lang">
+          <button class="lang-toggle" id="langToggle" aria-haspopup="true" aria-expanded="false">
+            <span class="lang-flag">🇬🇧</span><span>EN</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="lang-menu" role="menu" aria-label="Select language">
+            <a href="/" role="menuitem" aria-current="true"><span class="lang-flag">🇬🇧</span> English</a>
+            <a href="/es/" role="menuitem"><span class="lang-flag">🇪🇸</span> Español</a>
+            <a href="/fr/" role="menuitem"><span class="lang-flag">🇫🇷</span> Français</a>
+            <a href="/de/" role="menuitem"><span class="lang-flag">🇩🇪</span> Deutsch</a>
           </div>
         </div>
 
-        <!-- StopPanic -->
-        <div class="app-card bg-white border border-slate-200 rounded-3xl overflow-hidden">
-          <img src="/attachments/stoppanic-splash.png" alt="Modality" class="w-full h-64 object-cover">
-          <div class="p-8">
-            <div class="flex items-center gap-3 mb-4">
-              <img src="/attachments/stoppanic-app-icon.png" alt="Modality" class="w-12 h-12">
-              <div>
-                <h3 class="text-2xl font-bold">StopPanic</h3>
-                <span class="text-green-600 font-medium">Free + Subscriptions</span>
-              </div>
-            </div>
-            <p class="mt-4 text-slate-600">Your companion for managing panic attacks with tracking, relief tools, and forecasting.</p>
+        <a href="#apps" class="btn btn-primary">Explore apps</a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ===================== Hero ===================== -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Intelligent mobile solutions for healthcare</span>
+          <h1>Health technology that <span class="gradient-text">understands people</span>.</h1>
+          <p class="lede">FutureMed Solutions builds native iOS and Android health apps powered by machine learning, predictive modelling and AI — tools that help people understand their bodies and stay in control.</p>
+          <div class="hero-cta">
+            <a href="#apps" class="btn btn-primary">Discover our apps</a>
+            <a href="#about" class="btn btn-ghost">What we do</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><strong>3</strong><span>Health apps live &amp; in build</span></div>
+            <div class="stat"><strong>iOS + Android</strong><span>Native technologies</span></div>
+            <div class="stat"><strong>AI · ML · LLM</strong><span>At the core</span></div>
           </div>
         </div>
 
-        <!-- BloodFlow -->
-        <div class="app-card bg-white border border-slate-200 rounded-3xl overflow-hidden">
-          <div class="h-64 bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center text-white">
-            <div class="text-center">
-              <i class="fa-solid fa-droplet text-7xl mb-4"></i>
-              <h3 class="text-2xl font-bold">BloodFlow</h3>
+        <div class="hero-visual reveal">
+          <div class="hero-ring"></div>
+          <div class="hero-ring r2"></div>
+          <div class="phone">
+            <div class="phone-slides">
+              <img class="phone-slide is-active" src="/assets/stoppanic-splash.png" alt="StopPanic app splash screen" />
+              <img class="phone-slide" src="/assets/modality-splash.png" alt="Modality app splash screen" loading="lazy" />
+              <img class="phone-slide" src="/assets/bloodflow-splash.png" alt="BloodFlow app splash screen" loading="lazy" />
             </div>
           </div>
-          <div class="p-8">
-            <h3 class="text-2xl font-bold mb-2">BloodFlow</h3>
-            <span class="text-green-600 font-medium">Free + Subscriptions</span>
-            <p class="mt-4 text-slate-600">Early detection and prevention of thrombosis with smart monitoring.</p>
+          <div class="orb a"><img src="/assets/modality-app-icon.png" alt="Modality app icon" /></div>
+          <div class="orb b">
+            <!-- BloodFlow icon (inline SVG) -->
+            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-label="BloodFlow icon">
+              <defs>
+                <linearGradient id="bfh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff6a6a"/><stop offset=".55" stop-color="#e23b54"/><stop offset="1" stop-color="#7b2d8e"/></linearGradient>
+              </defs>
+              <rect width="512" height="512" rx="115" fill="url(#bfh)"/>
+              <path d="M256 120 C300 196 350 244 350 304 a94 94 0 1 1 -188 0 C162 244 212 196 256 120 Z" fill="#fff"/>
+              <path d="M196 308 h26 l16 -34 22 70 18 -44 12 18 h26" fill="none" stroke="#e23b54" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </div>
+          <div class="orb c"><img src="/assets/stoppanic-app-icon.png" alt="StopPanic app icon" /></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects -->
-  <section id="projects" class="py-20 bg-slate-100">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-4">Our Projects</h2>
-      <p class="text-center text-slate-600 mb-12">Advanced AI solutions for healthcare professionals</p>
+    <!-- ===================== About ===================== -->
+    <section class="section about" id="about">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">About FutureMed</span>
+          <h2>Deep engineering meets medical science.</h2>
+          <p>We are a Spain-based team combining native mobile craftsmanship with applied mathematics and artificial intelligence to create health tools people can trust.</p>
+        </div>
 
-      <div class="max-w-4xl mx-auto">
-        <div class="bg-white rounded-3xl overflow-hidden shadow-lg">
-          <img src="/attachments/CXRwatcher.png" alt="CXR Watcher" class="w-full">
-          <div class="p-10">
-            <h3 class="text-3xl font-bold mb-2">CXR Watcher</h3>
-            <p class="text-red-600 font-medium">Commercial API</p>
-            <p class="mt-4 text-slate-600">
-              AI-powered chest X-ray analysis tool. Assists radiologists and clinicians with lung diagnostics using state-of-the-art computer vision and machine learning.
-            </p>
-          </div>
+        <div class="expertise-grid">
+          <article class="exp-card reveal">
+            <div class="exp-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
+            </div>
+            <h3>Native medical apps</h3>
+            <p>Expertise in medical application development using native technologies for iOS and Android — fast, reliable and privacy-respecting by design.</p>
+          </article>
+
+          <article class="exp-card reveal">
+            <div class="exp-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4 4 4 0 0 0-2 7 4 4 0 0 0 3 6 3 3 0 0 0 6 0 4 4 0 0 0 3-6 4 4 0 0 0-2-7 4 4 0 0 0-4-4Z"/><path d="M12 8v9"/></svg>
+            </div>
+            <h3>ML for medical use</h3>
+            <p>Experience applying early and emerging machine-learning techniques to medical problems, built in Python and validated against real clinical needs.</p>
+          </article>
+
+          <article class="exp-card reveal">
+            <div class="exp-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-4 3 3 4-6"/></svg>
+            </div>
+            <h3>Mathematics &amp; forecasting</h3>
+            <p>Deep expertise in mathematics for forecasting and modelling — turning noisy, personal health signals into meaningful predictions.</p>
+          </article>
+
+          <article class="exp-card reveal">
+            <div class="exp-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><circle cx="5" cy="18" r="2"/><path d="M7 7l3 3m4 0 3-3m0 8-3-3m-4 0-3 3"/></svg>
+            </div>
+            <h3>AI, LLMs &amp; RAG</h3>
+            <p>Expertise across AI and ML — including large language models and retrieval-augmented generation — to build assistants that reason over medical knowledge.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About -->
-  <section id="about" class="py-20">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-12">About Futuremed Solutions</h2>
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <p class="text-lg text-slate-600 leading-relaxed">
-            We are a Spanish technology company specializing in medical mobile applications and artificial intelligence solutions for healthcare.
-          </p>
-          <ul class="mt-8 space-y-4">
-            <li class="flex gap-4">
-              <i class="fa-solid fa-mobile-screen-button text-red-500 text-xl mt-1"></i>
-              <div>
-                <strong>Native Mobile Development</strong><br>
-                <span class="text-slate-600">Expert iOS and Android development</span>
+    <!-- ===================== Applications ===================== -->
+    <section class="section apps" id="apps">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Applications</span>
+          <h2>Apps built to support everyday health.</h2>
+          <p>Free to start, available worldwide, and designed for real people. Each app pairs a calm, human interface with serious science underneath.</p>
+        </div>
+
+        <div class="app-list">
+          <!-- Modality -->
+          <article class="app-card reveal">
+            <div class="app-icon"><img src="assets/modality-app-icon.png" alt="Modality app icon" /></div>
+            <div class="app-body">
+              <div class="app-title-row">
+                <h3>Modality</h3>
+                <span class="badge badge-free">Free</span>
               </div>
-            </li>
-            <li class="flex gap-4">
-              <i class="fa-solid fa-brain text-red-500 text-xl mt-1"></i>
-              <div>
-                <strong>AI &amp; Machine Learning</strong><br>
-                <span class="text-slate-600">Python, LLMs, RAG systems, and medical AI</span>
+              <p class="app-tagline">Discover how you learn best.</p>
+              <p>An interactive questionnaire that determines your dominant sensory modality — visual, auditory or kinesthetic — so you can absorb information in the way that works best for you.</p>
+            </div>
+            <div class="app-cta">
+              <a class="store-btn" href="#" aria-label="Download Modality on the App Store">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 1.6c.1 1-.3 2-.9 2.7-.7.8-1.7 1.4-2.7 1.3-.1-1 .4-2 1-2.7.6-.7 1.7-1.2 2.6-1.3zM20 17c-.5 1.1-.7 1.6-1.3 2.6-.9 1.4-2.1 3.1-3.6 3.1-1.4 0-1.7-.9-3.5-.9s-2.2.9-3.5.9c-1.5 0-2.7-1.6-3.6-2.9C2 18 1.6 14 3.2 11.6c.9-1.3 2.4-2.1 3.9-2.1 1.4 0 2.3.9 3.5.9 1.1 0 1.8-.9 3.5-.9 1.3 0 2.7.7 3.6 1.9-3.2 1.7-2.7 6.2.3 7.6z"/></svg>
+                <span><span class="s-small">Download on the</span><span class="s-big">App Store</span></span>
+              </a>
+              <a class="store-btn" href="#" aria-label="Get Modality on Google Play">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 2.3 13.4 12 3.6 21.7c-.4-.2-.6-.6-.6-1.1V3.4c0-.5.2-.9.6-1.1zM14.8 13.4l2.6 2.6-9 5.2 6.4-7.8zm0-2.8L8.4 2.8l9 5.2-2.6 2.6zM18.6 9l2.8 1.6c.5.3.8.8.8 1.4s-.3 1.1-.8 1.4L18.6 15l-3-3 3-3z"/></svg>
+                <span><span class="s-small">Get it on</span><span class="s-big">Google Play</span></span>
+              </a>
+            </div>
+          </article>
+
+          <!-- StopPanic -->
+          <article class="app-card reveal">
+            <div class="app-icon"><img src="/assets/stoppanic-app-icon.png" alt="StopPanic app icon" /></div>
+            <div class="app-body">
+              <div class="app-title-row">
+                <h3>StopPanic</h3>
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-sub">+ Subscriptions</span>
               </div>
-            </li>
-            <li class="flex gap-4">
-              <i class="fa-solid fa-chart-line text-red-500 text-xl mt-1"></i>
-              <div>
-                <strong>Mathematics &amp; Modeling</strong><br>
-                <span class="text-slate-600">Forecasting, risk modeling, and predictive analytics</span>
+              <p class="app-tagline">Understand. Prepare. Stay in control.</p>
+              <p>A companion for living with panic attacks: track episodes, forecast patterns and triggers, and reach for the right tools and support the moment you need them.</p>
+            </div>
+            <div class="app-cta">
+              <a class="store-btn" href="#" aria-label="Download StopPanic on the App Store">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 1.6c.1 1-.3 2-.9 2.7-.7.8-1.7 1.4-2.7 1.3-.1-1 .4-2 1-2.7.6-.7 1.7-1.2 2.6-1.3zM20 17c-.5 1.1-.7 1.6-1.3 2.6-.9 1.4-2.1 3.1-3.6 3.1-1.4 0-1.7-.9-3.5-.9s-2.2.9-3.5.9c-1.5 0-2.7-1.6-3.6-2.9C2 18 1.6 14 3.2 11.6c.9-1.3 2.4-2.1 3.9-2.1 1.4 0 2.3.9 3.5.9 1.1 0 1.8-.9 3.5-.9 1.3 0 2.7.7 3.6 1.9-3.2 1.7-2.7 6.2.3 7.6z"/></svg>
+                <span><span class="s-small">Download on the</span><span class="s-big">App Store</span></span>
+              </a>
+              <a class="store-btn" href="#" aria-label="Get StopPanic on Google Play">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 2.3 13.4 12 3.6 21.7c-.4-.2-.6-.6-.6-1.1V3.4c0-.5.2-.9.6-1.1zM14.8 13.4l2.6 2.6-9 5.2 6.4-7.8zm0-2.8L8.4 2.8l9 5.2-2.6 2.6zM18.6 9l2.8 1.6c.5.3.8.8.8 1.4s-.3 1.1-.8 1.4L18.6 15l-3-3 3-3z"/></svg>
+                <span><span class="s-small">Get it on</span><span class="s-big">Google Play</span></span>
+              </a>
+            </div>
+          </article>
+
+          <!-- BloodFlow -->
+          <article class="app-card reveal">
+            <div class="app-icon"><img src="/assets/bloodflow-icon.svg" alt="BloodFlow app icon" /></div>
+            <div class="app-body">
+              <div class="app-title-row">
+                <h3>BloodFlow</h3>
+                <span class="badge badge-free">Free</span>
+                <span class="badge badge-sub">+ Subscriptions</span>
+                <span class="badge badge-sub">Coming soon</span>
               </div>
-            </li>
-          </ul>
+              <p class="app-tagline">Detect early. Prevent thrombosis.</p>
+              <p>A tool to help detect and prevent thrombosis — monitoring personal risk factors and guiding healthier circulation through timely, evidence-informed prompts.</p>
+            </div>
+            <div class="app-cta">
+              <a class="store-btn" href="#" aria-label="Notify me about BloodFlow on the App Store">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 1.6c.1 1-.3 2-.9 2.7-.7.8-1.7 1.4-2.7 1.3-.1-1 .4-2 1-2.7.6-.7 1.7-1.2 2.6-1.3zM20 17c-.5 1.1-.7 1.6-1.3 2.6-.9 1.4-2.1 3.1-3.6 3.1-1.4 0-1.7-.9-3.5-.9s-2.2.9-3.5.9c-1.5 0-2.7-1.6-3.6-2.9C2 18 1.6 14 3.2 11.6c.9-1.3 2.4-2.1 3.9-2.1 1.4 0 2.3.9 3.5.9 1.1 0 1.8-.9 3.5-.9 1.3 0 2.7.7 3.6 1.9-3.2 1.7-2.7 6.2.3 7.6z"/></svg>
+                <span><span class="s-small">Soon on the</span><span class="s-big">App Store</span></span>
+              </a>
+              <a class="store-btn" href="#" aria-label="Notify me about BloodFlow on Google Play">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 2.3 13.4 12 3.6 21.7c-.4-.2-.6-.6-.6-1.1V3.4c0-.5.2-.9.6-1.1zM14.8 13.4l2.6 2.6-9 5.2 6.4-7.8zm0-2.8L8.4 2.8l9 5.2-2.6 2.6zM18.6 9l2.8 1.6c.5.3.8.8.8 1.4s-.3 1.1-.8 1.4L18.6 15l-3-3 3-3z"/></svg>
+                <span><span class="s-small">Soon on</span><span class="s-big">Google Play</span></span>
+              </a>
+            </div>
+          </article>
         </div>
-        <div class="bg-slate-900 text-white p-10 rounded-3xl">
-          <h4 class="text-red-500 font-medium mb-4">OUR MISSION</h4>
-          <p class="text-2xl leading-tight">
-            Making advanced healthcare technology accessible to everyone through beautiful, intelligent mobile applications.
-          </p>
+
+        <p class="audience-note reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+          Available for everyone — our apps are built for a worldwide audience.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== Projects ===================== -->
+    <section class="section projects" id="projects">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Projects</span>
+          <h2>Technology we build for healthcare partners.</h2>
+          <p>Beyond consumer apps, we develop specialised tools for clinical and commercial use.</p>
+        </div>
+
+        <article class="project-card reveal">
+          <div class="project-shot">
+            <img src="/assets/cxr-watcher.png" alt="CXR Watcher displaying a chest X-ray analysis on a monitor" width="430" height="430" />
+          </div>
+          <div class="project-info">
+            <div class="app-title-row">
+              <h3>CXR Watcher</h3>
+              <span class="badge badge-api">Commercial API</span>
+            </div>
+            <p>A lung-diagnostics helper that analyses chest X-ray images using machine learning and computer vision — surfacing regions of interest to support radiologists and clinical workflows.</p>
+            <ul class="project-feats">
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Chest X-ray (CXR) image analysis at scale</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>ML &amp; computer-vision detection of regions of interest</li>
+              <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Integrates into existing systems via a simple API</li>
+            </ul>
+            <a href="#contacts" class="btn btn-primary">Request API access</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== Contacts ===================== -->
+    <section class="section contacts" id="contacts">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Contacts</span>
+          <h2>Let's talk.</h2>
+          <p>Whether you're a user, a clinician or a partner — we'd love to hear from you.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-cards reveal">
+            <div class="contact-card">
+              <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 6 9 7 9-7"/></svg></div>
+              <div class="c-label">Email</div>
+              <a class="c-value" href="mailto:info@futuremed.id">info@futuremed.id</a>
+            </div>
+
+            <div class="contact-card">
+              <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></div>
+              <div class="c-label">Mobile</div>
+              <span class="c-value pending">Available on request</span>
+            </div>
+
+            <div class="contact-card">
+              <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.5 8.5 0 0 1-3.9-.9L3 20l1-4.1a8.4 8.4 0 0 1-1-4A8.5 8.5 0 0 1 21 11.5z"/></svg></div>
+              <div class="c-label">WhatsApp</div>
+              <span class="c-value pending">Available on request</span>
+            </div>
+
+            <div class="contact-card">
+              <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m22 3-9.5 9.5M22 3l-6.5 18-3.5-8-8-3.5L22 3z"/></svg></div>
+              <div class="c-label">Telegram</div>
+              <span class="c-value pending">Available on request</span>
+            </div>
+
+            <div class="contact-card contact-full">
+              <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div class="c-label">Registered office</div>
+              <address class="c-value" style="font-style: normal;">
+                FutureMed Solutions SL<br />
+                Av. Ernesto Sarti, 10, Costa Adeje<br />
+                38660 Adeje, Santa Cruz de Tenerife, Spain
+              </address>
+            </div>
+          </div>
+
+          <aside class="contact-side reveal">
+            <h3>Building something in health tech?</h3>
+            <p>Tell us about your project — from a consumer health app to a clinical ML pipeline. We bring native mobile, mathematics and AI to the table.</p>
+            <a href="mailto:info@futuremed.id" class="btn btn-ghost">Email us at info@futuremed.id</a>
+            <div class="side-meta">
+              <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Based in Tenerife, Spain 🇪🇸</div>
+              <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg> futuremed.id</div>
+            </div>
+          </aside>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- Contact -->
-  <section id="contact" class="py-20 bg-slate-900 text-white">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-12">Get in Touch</h2>
-      <div class="grid md:grid-cols-2 gap-12">
-        <div>
-          <h3 class="text-2xl font-bold mb-6">Futuremed Solutions SL</h3>
-          <div class="space-y-4">
-            <p><i class="fa-solid fa-envelope text-red-500"></i> <a href="mailto:info@futuremed.id" class="hover:text-red-400">info@futuremed.id</a></p>
-            <p><i class="fa-solid fa-location-dot text-red-500"></i> Av. Ernesto Sarti, 10<br>Costa Adeje, 38660 Adeje<br>Santa Cruz de Tenerife, Spain</p>
-          </div>
+  <!-- ===================== Footer ===================== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="/assets/future-logo.png" alt="FutureMed Solutions" />
+          <p>Intelligent mobile solutions for healthcare. Native iOS &amp; Android apps powered by AI, machine learning and predictive modelling.</p>
         </div>
-        <div>
-          <p class="text-slate-400 mb-6">We are always open to new collaborations, partnerships, and feedback.</p>
-          <div class="flex gap-6 text-3xl">
-            <a href="#" class="hover:text-red-500"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#" class="hover:text-red-500"><i class="fa-brands fa-telegram"></i></a>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contacts">Contacts</a>
+          </div>
+          <div class="footer-col">
+            <h4>Applications</h4>
+            <a href="#apps">Modality</a>
+            <a href="#apps">StopPanic</a>
+            <a href="#apps">BloodFlow</a>
+          </div>
+          <div class="footer-col">
+            <h4>Get in touch</h4>
+            <a href="mailto:info@futuremed.id">info@futuremed.id</a>
+            <a href="#contacts">Adeje, Tenerife, Spain</a>
           </div>
         </div>
       </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> FutureMed Solutions SL. All rights reserved.</span>
+        <span>futuremed.id</span>
+      </div>
     </div>
-  </section>
-
-  <footer class="bg-black text-slate-500 py-8 text-center text-sm">
-    <p>© 2026 Futuremed Solutions SL • All Rights Reserved</p>
-    <p class="mt-2">futuremed.id</p>
   </footer>
 
+  <script src="/js/main.js"></script>
 </body>
 </html>
